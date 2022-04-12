@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "noImplicitAny": false /* required for js files */,
+      "strictNullChecks": false /* required for js files */,
+      "outDir": "./dist",
+      /* https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping */
+      "target": "es2020",
+      "module": "commonjs",
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "noUnusedLocals": true,
+      "noImplicitOverride": true,
+      "experimentalDecorators": true,
+      "useUnknownInCatchVariables": false /* we aren't prepared for enabling this by default since ts 4.4*/,
+      "isolatedModules": true /* required for esbuild */,
+      "lib": ["es2020"],
+      "types": ["node", "jest"],
+      "allowJs": true,
+      "checkJs": true,
+      "importsNotUsedAsValues": "error"
+    },
+    "include": ["**/*.ts", "**/*.js", "**/*.mjs", "**/*.cjs"],
+    "exclude": [
+      "node_modules",
+      "./.cache",
+      "./dist",
+      "**/__mocks__/*",
+      "coverage",
+      "config.js",
+      "tmp"
+    ]
+  }
+  
